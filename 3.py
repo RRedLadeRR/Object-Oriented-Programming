@@ -6,7 +6,7 @@ class Car:
         self.boredom = boredom
     
     def talk(self):
-        print("Wroom Wroom, self.name")
+        print("Wroom Wroom", self.name)
 
 def main():
     car1 = Car("Wroooom stututututu")
