@@ -1,4 +1,5 @@
 class Car:
+    
     total = 0
 
     @staticmethod

@@ -15,10 +15,25 @@ class Car:
 
     def talk(self):
         print("Wroom Wroom", self.__name)
+
+    @property
+    def mood(self):
+        unhappines = self.hunger + self.boredom
+        if unhappines < 5:
+            m = "wonderful"
+        elif 5 <= unhappines <= 10:
+            m = "not bad"
+        elif 11 <= unhappines <= 15:
+            m = "bad"
+        else:
+            m = "terrible"
+        return m
     
+def __pass_time(self):
+    self.hunger += 1
+    self.boredom += 1
+
 def main():
-    print("Attribute acess Car.total class:", end=(" "))
-    print(Car.total)
 
     print("Cars starting")
     car1 = Car("Car №1")
@@ -27,7 +42,6 @@ def main():
 
     Car.status()
 
-    print("Class attribute acess with object:", end=" ")
-    print(car1.total)
+    print("Object property acess:", car1.mood)
 
 main()

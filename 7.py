@@ -15,6 +15,18 @@ class Car:
 
     def talk(self):
         print("Wroom Wroom", self.__name)
+
+    @property
+    def name(self):
+        return self.__name
+    
+    @name.setter
+    def name(self, new_name):
+        if new_name == "":
+            print("Car name cannot be empty")
+        else:
+            self.__name = new_name
+            print("Name successfully changed")
     
 def main():
     print("Attribute acess Car.total class:", end=(" "))
