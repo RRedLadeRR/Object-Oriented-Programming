@@ -1,6 +1,6 @@
 class Car:
 
-    def __init__(self, name, hunger = 0, boredom =0):
+    def __init__(self, name, hunger = 0, boredom = 0):
         self.name = name
         self.hunger = hunger
         self.boredom = boredom
