@@ -13,7 +13,7 @@ def main():
     car1.talk()
     car2 = Car("Wroooom Wroooom Wroo00oo00m")
     car2.talk()
-    print("Attribute access -", car2.name)
+    print("Attribute access -", car1.name)
     print(car2)
 
 main()
