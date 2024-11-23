@@ -1,7 +1,7 @@
 class Car:
 
     def talk(self):
-        print("Wroom Wroom")
+        print("Wroom Wroom Wroooooom stututututu")
 
 def main():
     car = Car()
